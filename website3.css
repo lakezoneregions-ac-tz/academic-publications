@@ -8,7 +8,7 @@
 html, body {
   width: 100%;
   min-height: 100%;
-  background-color: #003366;  
+  background-color: #222222;  
   font-family: Arial, sans-serif;
 }
 .page-wrapper {
@@ -523,5 +523,6 @@ footer {
   padding-top: 10px;
   font-size: 14px;
 }
+
 
 
