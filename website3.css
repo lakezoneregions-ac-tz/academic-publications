@@ -6,14 +6,16 @@
 }
 
 html, body {
-  margin:0;
-  padding:0;
   width: 100%;
   min-height: 100%;
   background-color: #003366;  
   font-family: Arial, sans-serif;
 }
-
+.page-wrapper {
+min-height:100vh;
+display:flex;
+flex-direction:column;
+}
 /* ===== HEADER ===== */
 #site-header {
   display: flex;
@@ -521,4 +523,5 @@ footer {
   padding-top: 10px;
   font-size: 14px;
 }
+
 
