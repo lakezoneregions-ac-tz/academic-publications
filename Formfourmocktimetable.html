@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form four lake zone mock 2025 Timetabe</title>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        /* PAGE TITLE BAR */
+        .page-header {
+            background: #003366;
+            color: white;
+            padding: 25px 20px;
+            font-size: 24px;
+            font-weight: bold;
+            position: relative;
+        }
+
+        /* BREADCRUMB */
+        .breadcrumb {
+            position: absolute;
+            right: 25px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 14px;
+        }
+
+        .breadcrumb a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* CONTENT LAYOUT */
+        .container {
+            max-width: 1200px;
+            margin: 35px auto;
+            display: flex;
+            gap: 30px;
+            padding: 0 20px;
+        }
+
+        /* NEWS CARD */
+        .news-card {
+            background: white;
+            padding: 25px;
+            border-radius: 6px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            flex: 2;
+        }
+
+        .news-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .news-meta {
+            color: #666;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        .news-meta i {
+            margin-right: 6px;
+        }
+
+    .news-attachment {
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 8px 15px;
+            border: none;
+            background: #16a34a;
+            color: white;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 14px;
+        }    
+
+        .btn-attachment:hover {
+            background: #0d862e;
+        }
+
+        /* SIDEBAR */
+        .sidebar {
+            flex: 1;
+        }
+
+        .sidebar-card {
+            background: white;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            margin-bottom: 25px;
+        }
+
+        .sidebar h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        /* SEARCH BOX */
+        .search-box {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .search-box input {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-right: none;
+            border-radius: 4px 0 0 4px;
+        }
+
+        .search-box button {
+            background: #16a34a;
+            border: none;
+            padding: 8px 12px;
+            color: white;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+
+        .search-box button:hover {
+            background: #0e8a36;
+        }
+
+        /* CATEGORY LINKS */
+        .categories a {
+            display: block;
+            margin: 5px 0;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .categories a:hover {
+            text-decoration: underline;
+        }
+
+        .count {
+            color: #16a34a;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .btn-attachment {
+                float: none;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+        FORM FOUR TIMETABLE
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> / <a href="Formfourmocktimetable.html">News</a>
+        </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="container">
+
+        <!-- MAIN NEWS CONTENT -->
+        <div class="news-card">
+            <div class="news-title">FORM FOUR LAKE ZONE MOCK EXAMINATION 2025 TIMETABLE</div>
+
+            <div class="news-meta">
+                <i class="bi bi-clock"></i> <p id="newsDate"></p> Apr 3, 2025 09:25
+            </div>
+
+            <div class="news-body">
+                FORM FOUR LAKE ZONE REGIONS 2025<br><br>
+				</div>
+            <div class="news-attachment">
+                <a href="FINAL FORM FOUR LAKE ZONE TIME TABLE 2025.pdf" class="btn">Download file</a>
+            </div>
+
+            <div style="clear: both;"></div>
+        </div>
+
+        <!-- SIDEBAR -->
+        
+
+    </div>
+<script>
+    function formatManual(dateString) {
+        const dt = new Date(dateString);
+
+        const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+        const month = months[dt.getMonth()];
+        const day = dt.getDate();
+        const year = dt.getFullYear();
+
+        let hours = dt.getHours();
+        let minutes = dt.getMinutes();
+
+        if (minutes < 10) minutes = "0" + minutes;
+
+        return `${month} ${day}, ${year} ${hours}:${minutes}`;
+    }
+
+    const formattedDate = formatManual("2025-11-04 13:35");
+    document.getElementById("dateTime").innerText = formattedDate;
+</script>
+</body>
+</html>

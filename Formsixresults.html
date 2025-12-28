@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matokeo</title>
+	<style>
+	body {
+    margin: 0;
+    background: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+/* ---------- HEADER ----------- */
+.header {
+    background: #003366;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 26px;
+}
+
+.breadcrumbs a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.breadcrumbs span {
+    opacity: 0.9;
+}
+
+/* ---------- RESULT CARDS ----------- */
+.results-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: grid;
+	justify-content:center;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 35px;
+    padding: 0 20px;
+}
+
+.result-card {
+    background: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: 0.2s ease;
+}
+
+.result-card:hover {
+    transform: translateY(-4px);
+}
+
+.result-card img {
+    width: 90px;
+    opacity: 0.9;
+    margin-bottom: 15px;
+}
+
+.result-card h2 {
+    margin-top: 5px;
+    font-size: 22px;
+    color: #333;
+}
+
+.result-card a {
+    margin-top: 10px;
+    display: inline-block;
+    color: #0088FF;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* ---------- RESPONSIVE DESIGN ----------- */
+
+/* Tablets */
+@media(max-width: 900px) {
+    .results-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Phones */
+@media(max-width: 600px) {
+    .results-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+</style>
+</head>
+<body>
+
+    <!-- TOP HEADER -->
+    <div class="header">
+        <h1>FORM SIX LAKE ZONE MOCK EXAMINATION RESULTS</h1>
+        <div class="breadcrumbs">
+            <a href="index.html">Home</a> / <span>Results</span>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="results-container">
+
+        <div class="result-card">
+            <img src="icon1.png" alt="icon">
+            <h3 style="color:#0088FF;"><b>MATOKEO YA UTAMILIFU (MOCK) KIDATO CHA SITA KANDA YA ZIWA 2025</b></h3>
+            <a href="matokeo ya utamilifu kidato sita2025">📄 <b>Hakuna matokeo kwa sasa</b></a>
+        </div>
+
+        <div class="result-card">
+            <img src="icon2.png" alt="icon">
+            <h3 style="color:#0088FF;"><b>MATOKEO YA UTAMILIFU (MOCK) KIDATO CHA SITA KANDA YA ZIWA 2024</b></h3>
+            <a href="#">📄 <b>Hakuna matokeo</b></a>
+        </div>
+
+
+    </div>
+
+</body>
+</html>

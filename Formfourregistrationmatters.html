@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Matters</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            position: relative;
+        }
+
+        /* ===== WEBSITE TOP BAR ===== */
+        .top-bar {
+            background: #003366;
+            padding: 14px 20px;
+            color: white;
+            font-size: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-bar a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        /* ===== PRINT HEADER ===== */
+        .print-header {
+            display: none;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .print-header img {
+            width: 85px;
+        }
+
+        .header-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-title {
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 1.5;
+            width: 100%;
+        }
+
+        /* ===== BIG WATERMARK (Print Only — Positioned Above Table) ===== */
+        .watermark {
+            display: none;
+            position: absolute;
+            top: 150px;
+            left: 50%;
+            transform: translateX(-55%);
+            width: 60%;         /* VERY BIG — covers table width */
+            opacity: 0.20;      /* Light and clear */
+            z-index: 999;
+            pointer-events: none;
+        }
+
+        /* ===== PAGE LAYOUT ===== */
+        .container {
+            max-width: 1200px;
+            margin: 22px auto;
+            background: white;
+            padding: 22px;
+            box-shadow: 0 0 6px rgba(0,0,0,0.15);
+            position: relative;
+        }
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* ===== TABLE STYLES ===== */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        table th {
+            background: #f0f0f0;
+            padding: 12px;
+            text-align: left;
+            font-size: 14px;
+            font-weight: bold;
+            border-bottom: 1px solid #ddd;
+        }
+
+        table td {
+            padding: 10px;
+            font-size: 14px;
+            border-bottom: 1px solid #eee;
+        }
+
+        tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+
+        /* ===== SIGNATORY SECTION (Print Only) ===== */
+        .sign-section {
+            display: none;
+            margin-top: 60px;
+            font-size: 15px;
+        }
+
+        .sign-line {
+            margin-top: 40px;
+            border-top: 1px solid #000;
+            width: 280px;
+        }
+
+        /* ===== DOWNLOAD BUTTON (Hide on print) ===== */
+        .btn {
+            background: #0db333;
+            color: #fff;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 15px;
+        }
+        .btn:hover {
+            background: #0b8f29;
+        }
+
+        /* ===== EXCEL SECTION ===== */
+        .upload-box {
+            margin-top: 30px;
+            background: #E0FFE0;
+            padding: 20px;
+            border: 1px solid #dedede;
+            border-radius: 6px;
+        }
+
+        /* ===== PRINT RULES ===== */
+        @media print {
+
+            .top-bar,
+            .no-print,
+            .btn,
+            .upload-box {
+                display: none !important;
+            }
+
+            .print-header {
+                display: block !important;
+            }
+
+            .watermark {
+                display: block !important;
+            }
+
+            .sign-section {
+                display: block !important;
+            }
+
+            body {
+                background: white !important;
+            }
+
+            .container {
+                box-shadow: none !important;
+                margin: 0;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- WATERMARK (Print Only — Big & Above Table) -->
+    <img src="Lakezonelogo1.png" class="watermark" alt="Watermark">
+
+    <!-- PRINT HEADER -->
+    <div class="print-header">
+        <div class="header-flex">
+            <img src="left-logo.png">
+            <div class="header-title">
+                JAMHURI YA MUUNGANO WA TANZANIA<br>
+                OFISI YA RAIS,TAWALA ZA MIKOA NA SERIKALI ZA MITAA<br>
+                <strong>KAMATI YA TAALUMA KANDA YA ZIWA</strong><br>
+                MIKOA (GEITA, KAGERA, MARA, MWANZA, SHINYANGA NA SIMIYU)<br>
+				<strong>TANGAZO LA USAJILI WA WATAHINIWA MTIHANI WA UTAMILIFU (MOCK) KANDA YA ZIWA</strong>
+            </div>
+            <img src="Lakezonelogo1.png">
+        </div>
+    </div>
+
+    <!-- WEBSITE HEADER (Normal View Only) -->
+    <div class="top-bar no-print">
+        <span></span>
+        <a href="index.html">Home / Registration</a>
+    </div>
+
+    <div class="container">
+
+        <h3>1.MUDA WA USAJILI KWA WATAHINIWA KIDATO CHA NNE MWAKA 2025 MTIHANI WA UTAMILIFU (MOCK) KANDA YA ZIWA </h3>
+
+        <!-- PDF Download -->
+
+        <!-- ORIGINAL TABLE -->
+        <table>
+            <tr>
+                <th>Aina ya Mtihani</th>
+                <th>Muda wa usajili</th>
+            </tr>
+            <tr>
+                <td>Form Four Lake zone Mock Examination 2025</td>
+                <td>1<sup>st</sup> March - 30<sup>th</sup> April</td>
+            </tr>
+            </table>
+			<br>
+			<h3>2.MAELEKEZO KUHUSU  NAMNA YA KUWASAJILI WATAHINIWA </h3>
+			<h4>(a)<b>Kuhusu kusajili watahiniwa wa shule<h4>
+			<P align="justify">Mwalimu wa taaluma au mkuu wa shule atatakiwa kungia kwenye site ya <strong>“Lake zone academic publications”</strong> na kupakua template (download Excel file) kwa ajili ya usajili wa watahiniwa.</P>
+            <p align="justify">Mwalimu wa taaluma au mkuu wa shule hakikisha unajaza tarifaa za watahiniwa na masomo waliosajiliwa kufanya mtihani wa taifa, kwa uhakika na kwa umakini</p>
+            <h4>(b)<b>Kuhusu tamplate inayotumika kusajili watahiniwa.<h4>
+			<P align="justify">Jaza template uliyo download bila kuacha kipengele chochote kilichoonyeshwa kwenye template ya usajili na <strong>KAME</strong> usibadili au kufuta kitu chochote kwenye template hiyo.</P>
+			<h4>(c)<b>Baada ya kukamilsha kujaza template.<h4>
+			<P align="justify">Baada ya kukamilsha zoezi la kujaza taarifa za watahiniwa ndani ya tamplate na kujiridhisha kuwa taarifa zao zikosahihi. Template iyo itatumwa  Kwa <strong>IT-Wa Mkoa</strong> husika kupitia <strong>(namba ya WhatApp au Barua pepe)</strong> , kwa niaba ya <strong>REGIONAL ACADEMIC OFFICER-(RAO)</strong> kwa ajili ya hatua nyingine zinazofuata.</P><br><br>
+			<table>
+            <tr>
+                <th>Mkoa</th>
+                <th>Barua pepe ya IT</th>
+				<th>Namba ya WhatsApp na Mawasiliano</th>
+            </tr>
+            <tr>
+                <td>Geita</td>
+                <td>N/A</td>
+				<td>N/A</td>
+            </tr>
+			<tr>
+                <td>Kagera</td>
+                <td>N/A</td>
+				<td>N/A</td>
+            </tr>
+               <tr>
+                <td>Mara</td>
+                <td>N/A</td>
+				<td>N/A</td>
+            </tr>
+			<tr>
+                <td>Mwanza</td>
+                <td>N/A</td>
+				<td>N/A</td>
+            </tr>
+			<tr>
+                <td>Shinyanga</td>
+                <td>N/A</td>
+				<td>N/A</td>
+            </tr>
+			<tr>
+                <td>Simiyu</td>
+                <td>N/A</td>
+				<td>N/A</td>
+            </tr>
+			</table>
+			<h4>(d)Mwisho.<h4>
+			<P align="justify">Nawatakia utekelejazi mwema na tuzingatie muda uliopangwa kwa zoezi ili. Na yoyote anayepata changamoto basi hasisite kuwasiliana na IT wa mkoa husika kwa ajili ya utatuzi wa changamoto hiyo.</P>
+               
+        <!-- SIGNATORY SECTION -->
+        <div class="sign-section">
+            <br><br>
+            Imetolewa Na:<br><br>
+            <div class="sign-line"></div>
+            <strong>Katibu Kamati ya Taaluma Kanda ya Ziwa</strong><br>
+            Tarehe: ______________________
+        </div>
+
+        <!-- ===== EXCEL TEMPLATE DOWNLOAD ===== -->
+        <div class="upload-box no-print">
+            <h3>DOWNLOAD STUDENTS REGISTRATION TEMPLATE</h3>
+
+            <p>Please download the Excel template, fill student information and subjects</p>
+
+            <a href="student_registration_template.xlsx" class="btn">📥 Download Excel Template</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About Us</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background: #f9f9f9;
+    }
+
+    /* HEADER */
+    header {
+        background: #00BFFF;
+        color: #fff;
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    header a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    /* NAV MENU */
+    .nav {
+        position: relative;
+    }
+
+    .nav > a {
+        padding: 10px 20px;
+        background: #808080;
+        border-radius: 4px;
+        display: block;
+    }
+
+    /* DROPDOWN */
+    .dropdown {
+        display: none;
+        position: absolute;
+        background: #fff;
+        min-width: 230px;
+        top: 45px;
+        left: 0;
+        border-radius: 4px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        z-index: 999;
+    }
+
+    .dropdown a {
+        color: #333;
+        padding: 12px 18px;
+        display: block;
+        border-bottom: 1px solid #eee;
+        text-decoration: none;
+    }
+
+    .dropdown a:hover {
+        background: #f2f2f2;
+    }
+
+    .nav:hover .dropdown {
+        display: block;
+    }
+
+    /* PAGE TITLE */
+    .page-title {
+        background: #000000;
+        color: white;
+        font-size: 26px;
+        font-weight: bold;
+        padding: 18px 30px;
+    }
+
+    /* CONTENT SECTION */
+    .content {
+        padding: 30px;
+        background: white;
+        margin: 20px auto;
+        max-width: 1000px;
+        border-radius: 4px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+        color: #00A550;
+        margin-top: 25px;
+    }
+
+    ul li {
+        margin-bottom: 8px;
+    }
+
+    /* FOOTER */
+    footer {
+        background: #000000;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 40px;
+        font-size: 14px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+        header {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .nav > a {
+            width: 100%;
+            text-align: center;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="nav">
+        <a href="Aboutus.html">About</a>
+        <div class="dropdown">
+            <a href="Aboutus.html">About Us</a>
+            <a href="Mission.html">Mission and Vision</a>
+        </div>
+    </div>
+
+    <div>
+        <a href="index.html">Home</a> 
+    </div>
+</header>
+
+<!-- PAGE TITLE -->
+<div class="page-title">About Lake Zone  Academic Committee</div>
+
+<!-- MAIN CONTENT -->
+<div class="content">
+    <h2>Lake Zone Academics Committee</h2>
+    <p>
+        The Lake Zone Academic Committee is a regional educational body responsible for coordinating 
+        and supervising assessment activities for secondary schools students across the 
+        six Lake Zone regions of Tanzania: <strong>Geita, Kagera, Mara, 
+        Mwanza, Shinyanga, and Simiyu</strong>.
+    </p>
+
+    <p>
+        It plays a crucial role in preparing students for the official NECTA examinations by 
+        providing regional examinations before the final NECTA exams. These assessments measure 
+        academic readiness, support teachers in tracking progress, and help students identify 
+        areas needing improvement.
+    </p>
+
+    <h2>Purpose</h2>
+    <p>
+        The Committee ensures standardized, fair, and high-quality assessments across the region 
+        while improving performance through reliable exam administration, moderation, and 
+        timely release of results.
+    </p>
+
+    <h2>Background</h2>
+    <p>
+        The Academics Committee was established to unify and organize the exam processes for all 
+        Lake Zone regions. With increasing numbers of schools and students, the Committee ensures 
+        secure exam distribution, quality control, and consistent evaluation structures aligned 
+        with NECTA expectations.
+    </p>
+
+    <h2>Our Commitment</h2>
+    <ul>
+        <li>Provide reliable and high-quality regional exams</li>
+        <li>Ensure fairness and transparency in assessments</li>
+        <li>Release results on time to support NECTA readiness</li>
+        <li>Work closely with schools to strengthen academic performance</li>
+        <li>Promote improved standards of education in all six regions</li>
+    </ul>
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+<!-- FOOTER -->
+<footer>
+    &copy; 2025 Academics Committee – Lake Zone Regions. All Rights Reserved.
+</footer>
+
+</body>
+</html>
